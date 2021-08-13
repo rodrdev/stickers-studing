@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+
+* {
+  font-family: "Roboto Slab", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #663399;
+}
+.box {
+  background: #f2f2f2;
+  width: 560px;
+  margin: auto;
+
+  border-radius: 10px;
+  margin-top: 50px;
+}
+img {
+  width: 560px;
+}
+.form {
+  margin-left: 30px;
+}
+
+.option {
+  font-size: 18px;
+  padding: 3px;
+}
+
+.select {
+  background-color: #2f3676;
+  margin-right: 5px;
+  border-radius: 2px;
+  float: left;
+  margin-top: 6px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+.icon {
+  color: #ffff;
+}
+
+.count {
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background: #2f3676;
+  color: #ffff;
+}
+
+.count:hover {
+  background-color: #191847;
+}
+
+.iconCount {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.boxCount {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.countNumber {
+  background: #dde3e9;
+  color: #000;
+
+  border-radius: 5px;
+
+  margin: 10px;
+
+  padding: 10px;
+  cursor: pointer;
+}
+
+.inputCount {
+  background: #dde3e9;
+  max-width: 40px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+.inputCount[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.observations {
+  max-width: 400px;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #2f3676;
+  outline: none;
+  border-radius: 5px;
+  background: #dde3e9;
+}
+
+.footer {
+  width: 100%;
+
+  max-width: 480px;
+  background: #dde3e9;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.enviar {
+  background: #2f3676;
+  border-radius: 8px;
+  width: 130px;
+  padding: 10px;
+  color: #ffff;
+  border: none;
+  margin-left: 350px;
 }

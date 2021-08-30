@@ -2,13 +2,13 @@
 
 <hr/>
 <p align="center"> 
-    <img src="https://imgur.com/ty01ZKJ"/>
+    <img src="https://raw.githubusercontent.com/rodrdev/stickers-studing/main/img/Capturar.PNG"/>
 </p>
 
 <hr/>
 
 <p align="center"> 
-    <img src="https://imgur.com/k8Mv6Q7"/>
+    <img src="https://raw.githubusercontent.com/rodrdev/stickers-studing/main/img/finalizado.PNG"/>
 </p>
 
 #### :tada: Passo a passo para subir a aplicação front-end:

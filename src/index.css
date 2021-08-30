@@ -1,12 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;500&family=Roboto:wght@500&display=swap");
 
 * {
-  font-family: "Roboto Slab", serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: #663399;
 }
+
+.primaryTitle {
+  position: absolute;
+  margin: 20px;
+  color: #fff;
+  font-weight: 100;
+}
+.pacote {
+  font-size: 25px;
+  margin-top: 8px;
+}
+.primaryBox {
+  margin-left: 20px;
+}
+
 .box {
   background: #f2f2f2;
   width: 560px;
@@ -18,8 +34,14 @@ body {
 img {
   width: 560px;
 }
-.form {
-  margin-left: 30px;
+
+.footer {
+  margin-top: 20px;
+  max-width: 520px;
+  background: #dde3e9;
+  padding: 20px;
+  border-radius: 8px;
+  height: 50px;
 }
 
 .option {
@@ -27,26 +49,52 @@ img {
   padding: 3px;
 }
 
-.select {
-  background-color: #2f3676;
-  margin-right: 5px;
-  border-radius: 2px;
-  float: left;
-  margin-top: 6px;
+.checkbox {
+  appearance: none;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.checkbox::before {
   height: 20px;
   width: 20px;
+  background: #2f3676;
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+}
+
+.checkbox:checked::before {
+  content: "\2714";
+  color: #fff;
   text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+label {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.checkbox:hover::before {
+  background: #191847;
+}
+.select:hover {
+  background: #191847;
 }
 .icon {
   color: #ffff;
 }
 
 .count {
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
   margin: 10px;
   border: none;
-  padding: 10px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   background: #2f3676;
   color: #ffff;
@@ -56,9 +104,8 @@ img {
   background-color: #191847;
 }
 
-.iconCount {
-  font-size: 20px;
-  margin-top: 5px;
+.count:disabled {
+  background: #c5cfd6;
 }
 
 .boxCount {
@@ -69,7 +116,7 @@ img {
 .countNumber {
   background: #dde3e9;
   color: #000;
-
+  border: 1px solid #2f3676;
   border-radius: 5px;
 
   margin: 10px;
@@ -86,6 +133,10 @@ img {
   border: none;
   font-weight: 500;
   font-size: 20px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 20px;
+  margin-top: 10px;
 }
 .inputCount[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -99,16 +150,7 @@ img {
   outline: none;
   border-radius: 5px;
   background: #dde3e9;
-}
-
-.footer {
-  width: 100%;
-
-  max-width: 480px;
-  background: #dde3e9;
-  padding: 40px;
-  border-radius: 8px;
-  margin-top: 20px;
+  padding: 15px;
 }
 
 .enviar {
@@ -118,5 +160,36 @@ img {
   padding: 10px;
   color: #ffff;
   border: none;
-  margin-left: 350px;
+  float: right;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.disabled {
+  background: #c5cfd6;
+  color: #555555;
+}
+
+.enviar:hover {
+  background: #191847;
+}
+
+.deactivate {
+  display: none;
+}
+
+.active {
+  color: #00c57c;
+  margin-left: 40px;
+  display: block;
+}
+.disabled::before {
+  background-color: #c5cfd6 !important;
+}
+
+.error {
+  background-color: #f59393;
+}
+.error::before {
+  background-color: #f59393;
 }
